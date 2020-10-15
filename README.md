@@ -4,8 +4,24 @@ Kelompok B04
 - Feraldy Nathanael 05111840000166
 
 **Soal 1**
-> Sebutkan webserver yang digunakan pada "testing.mekanis.me"!\
+> Sebutkan webserver yang digunakan pada "testing.mekanis.me"!
 
+Filter paket yang berasal atau menuju testing.mekanis.me dengan sintaks
+
+```
+http.post == "testing.mekanis.me"
+```
+Kemudian klik kanan pada salah satu paket kemudian klik follow -> tcp stream
+
+![output-satu](img/soal1out.png)
+
+Webserver tertulis dengan nama server sebagai berikut
+
+![output-satu-next](img/soal1nginx.jpg)
+
+```
+Server: nginx/1.14.0 (Ubuntu)
+```
 
 **Soal 2**
 > Simpan gambar "Tim_Kunjungan_Kerja_BAKN_DPR_RI_ke_Sukabumi141436.jpg"!
@@ -13,8 +29,33 @@ Kelompok B04
 **Soal 3**
 > Cari username dan password ketika login di "ppid.dpr.go.id"!
 
+Untuk soal ini kita lakukan filter dengan sintaks
+```
+http.post == "ppid.dpr.go.id"
+```
+karena kita mencari username dan password (http method post), kita gabung sintaksnya untuk melakukan filter http dan method post maka sintaks akan menjadi
+
+```
+http.post == "ppid.dpr.go.id" && http.request.method == "POST"
+```
+
+![output-tiga](img/soal3out.jpg)
+
+Informasi mengenai login didapat melalui detail paket seperti berikut
+
+![output-tiga-next](img/soal3next.jpg)
+
+
 **Soal 4**
 > Temukan paket dari web-web yang menggunakan basic authentication method!
+
+Untuk melakukan filter digunakan sintaks
+
+```
+http.authorization contains "Basic"
+```
+![output-empat](img/soal4.jpg)
+
 
 **Soal 5**
 > Ikuti perintah di aku.pengen.pw! Username dan password bisa didapatkan dari file .pcapng!
