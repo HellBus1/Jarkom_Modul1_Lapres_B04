@@ -3,6 +3,8 @@ Kelompok B04
 - Syubban Fakhriya 05111840000042
 - Feraldy Nathanael 05111840000166
 
+<br/>
+
 **Soal 1**
 > Sebutkan webserver yang digunakan pada "testing.mekanis.me"!
 
@@ -23,8 +25,12 @@ Webserver tertulis dengan nama server sebagai berikut
 Server: nginx/1.14.0 (Ubuntu)
 ```
 
+<br/>
+
 **Soal 2**
 > Simpan gambar "Tim_Kunjungan_Kerja_BAKN_DPR_RI_ke_Sukabumi141436.jpg"!
+
+<br/>
 
 **Soal 3**
 > Cari username dan password ketika login di "ppid.dpr.go.id"!
@@ -45,6 +51,7 @@ Informasi mengenai login didapat melalui detail paket seperti berikut
 
 ![output-tiga-next](img/soal3next.jpg)
 
+<br/>
 
 **Soal 4**
 > Temukan paket dari web-web yang menggunakan basic authentication method!
@@ -59,6 +66,19 @@ http.authorization contains "Basic"
 
 **Soal 5**
 > Ikuti perintah di aku.pengen.pw! Username dan password bisa didapatkan dari file .pcapng!
+
+Pertama kita lakukan filter terhadap IP address 157.245.50.224
+kemudian kita dapat paket dengan protokol http dan method get
+> ip.addr == 157.245.50.224
+
+![output-empat](img/soal51.jpg)
+![output-empat](img/soal52.jpg)
+
+DIkarenakan menggunakan authorization Basic, maka username dan password yang dimasukan dapat terlihat yaitu kakakgamtenk dan hartatahtabermuda.
+
+Setelah memasukan username dan password terbuka halaman yang meminta kita memasukan urutan konfigurasi kabel T568B
+
+![output-empat](img/soal53.jpg)
 
 **Soal 6**
 > Seseorang menyimpan file zip melalui FTP dengan nama "Answer.zip". Simpan dan Buka file "Open This.pdf" di Answer.zip. Untuk mendapatkan password zipnya, temukan dalam file zipkey.txt (passwordnya adalah isi dari file txt tersebut).
