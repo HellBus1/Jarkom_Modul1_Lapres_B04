@@ -189,9 +189,12 @@ Kemudian kita save as pdf dan akan ada file yang isinya seperti berikut
 
 Untuk melakukan filter perintahnya sebagai berikut
 
-> port 21
+> tcp port 21 and host test.rebex.net
 
-![output-sebelas](img/soal11filter.JPG)
+disini kita lakukan filter terhadap website ftp tester gratis bernama rebex
+
+![output-sebelas](img/gambar11.JPG)
+![output-sebelas](img/gambar111.JPG)
 
 **Soal 12**
 > Filter sehingga wireshark hanya mengambil paket yang berasal dari port 80!
