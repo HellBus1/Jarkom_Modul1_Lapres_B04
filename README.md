@@ -85,15 +85,74 @@ Setelah memasukan username dan password terbuka halaman yang meminta kita memasu
 **Soal 6**
 > Seseorang menyimpan file zip melalui FTP dengan nama "Answer.zip". Simpan dan Buka file "Open This.pdf" di Answer.zip. Untuk mendapatkan password zipnya, temukan dalam file zipkey.txt (passwordnya adalah isi dari file txt tersebut).
 
+Langkah pertama kita mencari Answer.zip dengan perintah
+
+> ftp-data.command contains "Answer.zip" 
+
+![output-enam](img/soal61.jpg)
+
+karena ada 2 paket, kita pilih yang paling panjang lalu follow --> tcp stream dan save as raw dengan nama Answer.zip
+
+![output-enam](img/soal63.jpg)
+
+karena zip nya terenkripsi kita cari password nya di zipkey.txt dengan perintah
+
+> ftp-data.command contains "zipkey.txt" 
+
+outputnya akan seperti berikut
+
+![output-enam](img/soal64.jpg)
+
+kemudian kita follow --> tcp stream --> ganti show and save data as menjadi ascii akan terlihat isi dari file zipkey.txt
+
+![output-enam](img/soal65.jpg)
+
+lalu kita masukkan password dari answer.zip dan akan ada file open this.pdf. Isi dari file tersebut adalah
+
+![output-enam](img/soal66.jpg)
+
 **Soal 7**
 > Ada 500 file zip yang disimpan ke FTP Server dengan nama 1.zip, 2.zip, ..., 500.zip. Salah satunya berisi pdf yang berisi puisi. Simpan dan Buka file pdf tersebut.
 Your Super Mega Ultra Rare Hint = nama pdf-nya "Yes.pdf"
 
+Untuk mencari file dengan nama tertentu kita bisa memakai perintah
+
+> frame contains "Yes.pdf"
+
+![output-tujuh](img/soal7.jpg)
+
+terdapat dua output paket, disini kita mengambil paket terpanjang kemudan kita follow --> tcp stream
+--> rubah show and save data as menjadi raw
+
+![output-tujuh](img/soal71.jpg)
+
+kemudian save dengan nama coba.zip, ekstrak zip tersebut lalu buka yes.pdf
+
+![output-tujuh](img/soal74.jpg)
+
+![output-tujuh](img/soal75.jpg)
+
 **Soal 8**
 > Cari objek apa saja yang didownload (RETR) dari koneksi FTP dengan Microsoft FTP Service!
 
+Langkah pertama kita filter request ftp dengan perintah
+
+> ftp.request.command contains "RETR"
+
+akan didapatkan output seperti berikut
+
+![output-delapan](img/soal8.jpg)
+
 **Soal 9**
 > Cari username dan password ketika login FTP pada localhost!
+
+Langkah pertama kita ketikkan perintah berikut
+
+> ftp.request.command contains "USER" || ftp.request.command contains "PASS"
+
+perintah pertama digunakan untuk mencari paket ftp yang memiliki informasi tentang request username lalu perintah kedua untuk password, digunakan or karena kita akan menampilkan hasil dari dua paket yang terpisah
+
+![output-sembilan](img/soal9.jpg)
 
 **Soal 10**
 > Cari file .pdf di wireshark lalu download dan buka file tersebut!
