@@ -73,6 +73,7 @@ kemudian kita dapat paket dengan protokol http dan method get
 > ip.addr == 157.245.50.224
 
 ![output-lima](img/soal51.jpg)
+
 ![output-lima](img/soal52.jpg)
 
 DIkarenakan menggunakan authorization Basic, maka username dan password yang dimasukan dapat terlihat yaitu kakakgamtenk dan hartatahtabermuda.
