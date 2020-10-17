@@ -191,6 +191,7 @@ Untuk melakukan filter perintahnya sebagai berikut
 
 > port 21
 
+![output-sebelas](img/soal11filter.JPG)
 
 **Soal 12**
 > Filter sehingga wireshark hanya mengambil paket yang berasal dari port 80!
