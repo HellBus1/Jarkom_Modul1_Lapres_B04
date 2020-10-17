@@ -78,7 +78,10 @@ http.authorization contains "Basic"
 
 Pertama kita lakukan filter terhadap IP address 157.245.50.224
 kemudian kita dapat paket dengan protokol http dan method get
-> ip.addr == 157.245.50.224
+
+```
+ip.addr == 157.245.50.224
+```
 
 ![output-lima](img/soal51.jpg)
 
@@ -95,7 +98,9 @@ Setelah memasukan username dan password terbuka halaman yang meminta kita memasu
 
 Langkah pertama kita mencari Answer.zip dengan perintah
 
-> ftp-data.command contains "Answer.zip" 
+```
+ftp-data.command contains "Answer.zip" 
+```
 
 ![output-enam](img/soal61.jpg)
 
@@ -105,7 +110,9 @@ karena ada 2 paket, kita pilih yang paling panjang lalu follow --> tcp stream da
 
 karena zip nya terenkripsi kita cari password nya di zipkey.txt dengan perintah
 
-> ftp-data.command contains "zipkey.txt" 
+```
+ftp-data.command contains "zipkey.txt" 
+```
 
 outputnya akan seperti berikut
 
@@ -125,7 +132,9 @@ Your Super Mega Ultra Rare Hint = nama pdf-nya "Yes.pdf"
 
 Untuk mencari file dengan nama tertentu kita bisa memakai perintah
 
-> frame contains "Yes.pdf"
+```
+frame contains "Yes.pdf"
+```
 
 ![output-tujuh](img/soal7.jpg)
 
@@ -145,7 +154,9 @@ kemudian save dengan nama coba.zip, ekstrak zip tersebut lalu buka yes.pdf
 
 Langkah pertama kita filter request ftp dengan perintah
 
-> ftp.request.command contains "RETR"
+```
+ftp.request.command contains "RETR"
+```
 
 akan didapatkan output seperti berikut
 
@@ -156,7 +167,9 @@ akan didapatkan output seperti berikut
 
 Langkah pertama kita ketikkan perintah berikut
 
-> ftp.request.command contains "USER" || ftp.request.command contains "PASS"
+```
+ftp.request.command contains "USER" || ftp.request.command contains "PASS"
+```
 
 perintah pertama digunakan untuk mencari paket ftp yang memiliki informasi tentang request username lalu perintah kedua untuk password, digunakan or karena kita akan menampilkan hasil dari dua paket yang terpisah
 
@@ -168,7 +181,9 @@ clue: "25 50 44 46"
 
 Langkah pertama kita masukkan perintah
 
-> frame contains 25.50.44.46
+```
+frame contains 25.50.44.46
+```
 
 akan memiliki output seperti ini
 
@@ -189,7 +204,9 @@ Kemudian kita save as pdf dan akan ada file yang isinya seperti berikut
 
 Untuk melakukan filter perintahnya sebagai berikut
 
-> tcp port 21 and host test.rebex.net
+```
+tcp port 21 and host test.rebex.net
+```
 
 disini kita lakukan filter terhadap website ftp tester gratis bernama rebex
 
@@ -201,7 +218,9 @@ disini kita lakukan filter terhadap website ftp tester gratis bernama rebex
 
 Untuk melakukan filter perintahnya sebagai berikut
 
-> src port 80
+```
+src port 80
+```
 
 ![output-dua-belas](img/soal121.jpg)
 ![output-dua-belas](img/soal122.jpg)
@@ -211,7 +230,9 @@ Untuk melakukan filter perintahnya sebagai berikut
 
 Untuk melakukan filter digunakan perintah
 
-> dst port 443
+```
+dst port 443
+```
 
 ![output-tiga-belas](img/soal131.jpg)
 ![output-tiga-belas](img/soal133.jpg)
@@ -222,7 +243,9 @@ Untuk melakukan filter digunakan perintah
 Untuk melakukan filter digunakan perintah
 
 
-> src 192.168.0.2
+```
+src 192.168.0.2
+```
 
 ![output-empat-belas](img/soal142.jpg)
 ![output-empat-belas](img/soal141.jpg)
@@ -234,7 +257,9 @@ Untuk melakukan filter digunakan perintah
 
 Untuk melakukan filter digunakan perintah
 
-> dst monta.if.its.ac.id
+```
+dst monta.if.its.ac.id
+```
 
 ![output-lima-belas](img/soal151.jpg)
 ![output-lima-belas](img/soal152.jpg)
