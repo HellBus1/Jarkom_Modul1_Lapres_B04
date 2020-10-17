@@ -31,6 +31,14 @@ Server: nginx/1.14.0 (Ubuntu)
 **Soal 2**
 > Simpan gambar "Tim_Kunjungan_Kerja_BAKN_DPR_RI_ke_Sukabumi141436.jpg"!
 
+Untuk soal ini, kita bisa langsung melakukan/memilih opsi File -> Export Object -> HTTP
+
+![output-dua](img/soal2export.jpg)
+
+Selanjutnya akan muncul window baru. Pada window tersebut, kita bisa memanfaatkan fitur text filter dan mengetikan nama file yang ingin di save/dicari.
+Untuk menyimpan file kita bisa langsung memilih file yang diinginkan dan menekan tombol save.
+
+![output-dua-next](img/soal2filterexport.jpg)
 <br/>
 
 **Soal 3**
@@ -178,6 +186,11 @@ Kemudian kita save as pdf dan akan ada file yang isinya seperti berikut
 
 **Soal 11**
 > Filter sehingga wireshark hanya mengambil paket yang mengandung port 21!
+
+Untuk melakukan filter perintahnya sebagai berikut
+
+> port 21
+
 
 **Soal 12**
 > Filter sehingga wireshark hanya mengambil paket yang berasal dari port 80!
