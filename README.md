@@ -2,8 +2,9 @@
 Kelompok B04
 - Syubban Fakhriya 05111840000042
 - Feraldy Nathanael 05111840000166
-
 <br/>
+
+# Display Filter
 
 **Soal 1**
 > Sebutkan webserver yang digunakan pada "testing.mekanis.me"!
@@ -71,14 +72,14 @@ Pertama kita lakukan filter terhadap IP address 157.245.50.224
 kemudian kita dapat paket dengan protokol http dan method get
 > ip.addr == 157.245.50.224
 
-![output-empat](img/soal51.jpg)
-![output-empat](img/soal52.jpg)
+![output-lima](img/soal51.jpg)
+![output-lima](img/soal52.jpg)
 
 DIkarenakan menggunakan authorization Basic, maka username dan password yang dimasukan dapat terlihat yaitu kakakgamtenk dan hartatahtabermuda.
 
 Setelah memasukan username dan password terbuka halaman yang meminta kita memasukan urutan konfigurasi kabel T568B
 
-![output-empat](img/soal53.jpg)
+![output-lima](img/soal53.jpg)
 
 **Soal 6**
 > Seseorang menyimpan file zip melalui FTP dengan nama "Answer.zip". Simpan dan Buka file "Open This.pdf" di Answer.zip. Untuk mendapatkan password zipnya, temukan dalam file zipkey.txt (passwordnya adalah isi dari file txt tersebut).
@@ -96,6 +97,24 @@ Your Super Mega Ultra Rare Hint = nama pdf-nya "Yes.pdf"
 **Soal 10**
 > Cari file .pdf di wireshark lalu download dan buka file tersebut!
 clue: "25 50 44 46" 
+
+Langkah pertama kita masukkan perintah
+
+> frame contains 25.50.44.46
+
+akan memiliki output seperti ini
+
+![output-sepuluh](img/soal101.jpg)
+
+kemudian pilih paket tersebut lalu follow --> tcp stream dan ganti show data and save as menjadi raw
+
+![output-sepuluh](img/soal102.jpg)
+
+Kemudian kita save as pdf dan akan ada file yang isinya seperti berikut
+
+![output-sepuluh](img/103.jpg)
+
+# Capture Filter
 
 **Soal 11**
 > Filter sehingga wireshark hanya mengambil paket yang mengandung port 21!
