@@ -182,11 +182,42 @@ Kemudian kita save as pdf dan akan ada file yang isinya seperti berikut
 **Soal 12**
 > Filter sehingga wireshark hanya mengambil paket yang berasal dari port 80!
 
+Untuk melakukan filter perintahnya sebagai berikut
+
+> src port 80
+
+![output-dua-belas](img/soal121.jpg)
+![output-dua-belas](img/soal122.jpg)
+
 **Soal 13**
 > Filter sehingga wireshark hanya menampilkan paket yang menuju port 443!
+
+Untuk melakukan filter digunakan perintah
+
+> dst port 443
+
+![output-tiga-belas](img/soal131.jpg)
+![output-tiga-belas](img/soal133.jpg)
 
 **Soal 14**
 > Filter sehingga wireshark hanya mengambil paket yang berasal dari ip kalian!
 
+Untuk melakukan filter digunakan perintah
+
+
+> src 192.168.0.2
+
+![output-empat-belas](img/soal142.jpg)
+![output-empat-belas](img/soal141.jpg)
+![output-empat-belas](img/soal143.jpg)
+
+
 **Soal 15**
 > Filter sehingga wireshark hanya mengambil paket yang tujuannya ke monta.if.its.ac.id!
+
+Untuk melakukan filter digunakan perintah
+
+> dst monta.if.its.ac.id
+
+![output-lima-belas](img/soal151.jpg)
+![output-lima-belas](img/soal152.jpg)
